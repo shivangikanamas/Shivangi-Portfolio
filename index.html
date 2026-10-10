@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10100f">
+    <meta name="description" content="Shivangi's developer portfolio — Java, cloud and DevOps projects.">
+    <title>Shivangi — Java &amp; DevOps Portfolio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Main navigation">
+        <a class="wordmark" href="#home" aria-label="Shivangi, home">
+          <span class="wordmark-icon">S<span>.</span></span>
+          <span>shivangi<span class="wordmark-dot">.</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#toolkit">Toolkit</a>
+          <a href="#projects">Projects</a>
+          <a class="nav-cta" href="https://github.com/shivangikanamas">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="availability"><span class="availability-dot"></span> OPEN TO LEARNING &amp; OPPORTUNITIES</div>
+          <p class="hero-kicker"><span class="kicker-line"></span> ASPIRING DEVOPS ENGINEER</p>
+          <h1 id="hero-title">Building ideas.<br>Shipping them <span class="accent-text">reliably.</span></h1>
+          <p class="hero-description">
+            Hi, I’m <strong>Shivangi</strong> — exploring Java, cloud infrastructure
+            and the tools that take an application from a few lines of code
+            to a complete delivery pipeline.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my project <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="https://github.com/shivangikanamas">Visit my GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-facts" aria-label="Portfolio highlights">
+            <div><strong>01</strong><span>featured project</span></div>
+            <span class="fact-divider" aria-hidden="true"></span>
+            <div><strong>12</strong><span>technologies explored</span></div>
+            <span class="fact-divider" aria-hidden="true"></span>
+            <div><strong>25</strong><span>Java LTS</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Illustration of a Java application deployment pipeline">
+          <div class="art-grid" aria-hidden="true"></div>
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="pipeline-card">
+            <div class="pipeline-head"><span>DEPLOYMENT PIPELINE</span><span class="live-indicator"><i></i> READY</span></div>
+            <div class="pipeline-title">From commit to cluster</div>
+            <div class="pipeline-nodes">
+              <div class="pipeline-node">
+                <span class="node-icon node-code">&lt;/&gt;</span>
+                <span>Code</span>
+              </div>
+              <span class="pipeline-connector"><i></i></span>
+              <div class="pipeline-node">
+                <span class="node-icon node-build">M</span>
+                <span>Build</span>
+              </div>
+              <span class="pipeline-connector"><i></i></span>
+              <div class="pipeline-node">
+                <span class="node-icon node-image">▤</span>
+                <span>Image</span>
+              </div>
+              <span class="pipeline-connector"><i></i></span>
+              <div class="pipeline-node">
+                <span class="node-icon node-cloud">☁</span>
+                <span>Deploy</span>
+              </div>
+            </div>
+            <div class="terminal-card">
+              <div class="terminal-title"><span></span><span></span><span></span><span>pipeline.yml</span></div>
+              <pre><code><span class="code-purple">stage</span>(<span class="code-green">'Build'</span>) {
+  <span class="code-blue">mvn</span> <span class="code-muted">'clean verify'</span>
+}
+<span class="code-purple">stage</span>(<span class="code-green">'Ship'</span>) {
+  <span class="code-blue">docker</span> <span class="code-muted">'build &amp;&amp; deploy'</span>
+}</code></pre>
+            </div>
+          </div>
+          <div class="float-tag float-tag-java"><span>☕</span> JAVA 25</div>
+          <div class="float-tag float-tag-cloud"><span>✳</span> CLOUD NATIVE</div>
+          <div class="art-caption"><span>FIG 01</span> / IDEAS INTO INFRASTRUCTURE</div>
+        </div>
+        <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="wrap about-grid">
+          <div class="section-index"><span>01 / THE PERSON</span><span class="index-line"></span></div>
+          <div class="about-copy">
+            <p class="eyebrow">A LITTLE ABOUT ME</p>
+            <h2 id="about-title">Curious by nature.<br><span class="muted-heading">Practical by design.</span></h2>
+            <p>
+              I’m building my foundation in software development and DevOps:
+              writing Java applications, learning how cloud infrastructure fits
+              together, and making the delivery process repeatable.
+            </p>
+            <p>
+              This portfolio shows what I’m exploring right now: a task manager
+              backed by a Java REST API, with an end-to-end example pipeline
+              spanning CI, containers, cloud infrastructure and Kubernetes.
+            </p>
+            <a class="text-link" href="#projects">See what I’m building <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="about-aside">
+            <div class="aside-rule"></div>
+            <span class="aside-label">MY APPROACH</span>
+            <span class="aside-quote">“Learn the fundamentals.<br>Build something real.<br>Keep making it better.”</span>
+            <div class="aside-stamp"><span>IN PROGRESS</span><span class="stamp-star">✳</span><span>ALWAYS LEARNING</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section toolkit-section" id="toolkit" aria-labelledby="toolkit-title">
+        <div class="wrap">
+          <div class="section-index"><span>02 / THE TOOLKIT</span><span class="index-line"></span></div>
+          <div class="toolkit-heading">
+            <div><p class="eyebrow">TOOLS I’M EXPLORING</p><h2 id="toolkit-title">One project. <span class="muted-heading">Many layers.</span></h2></div>
+            <p class="toolkit-intro">A connected look at building, shipping and running an application.</p>
+          </div>
+          <div class="toolkit-grid">
+            <article class="tool-card">
+              <span class="tool-number">01</span><span class="tool-symbol symbol-build" aria-hidden="true">&lt;/&gt;</span>
+              <h3>Build</h3><p>Application &amp; interface</p>
+              <div class="tool-chips"><span>Java 25</span><span>Spring Boot</span><span>Maven</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </article>
+            <article class="tool-card">
+              <span class="tool-number">02</span><span class="tool-symbol symbol-pipeline" aria-hidden="true">↗</span>
+              <h3>Automate</h3><p>Test &amp; deliver</p>
+              <div class="tool-chips"><span>Jenkins</span><span>SonarQube</span><span>Nexus</span><span>Docker</span></div>
+            </article>
+            <article class="tool-card">
+              <span class="tool-number">03</span><span class="tool-symbol symbol-cloud" aria-hidden="true">☁</span>
+              <h3>Deploy</h3><p>Cloud &amp; infrastructure</p>
+              <div class="tool-chips"><span>AWS</span><span>Terraform</span><span>Kubernetes</span><span>Ansible</span></div>
+            </article>
+          </div>
+          <p class="toolkit-note"><span aria-hidden="true">✳</span> These are technologies explored in my portfolio project — a foundation I’m continuing to grow.</p>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="wrap">
+          <div class="section-index"><span>03 / SELECTED WORK</span><span class="index-line"></span></div>
+          <div class="projects-heading">
+            <div><p class="eyebrow">LEARNING THROUGH BUILDING</p><h2 id="projects-title">Featured <span class="muted-heading">project.</span></h2></div>
+            <span class="project-count">01 PROJECT</span>
+          </div>
+          <article class="project-card">
+            <div class="project-preview">
+              <div class="preview-top"><span class="preview-dots"><i></i><i></i><i></i></span><span>DAYMARK / TASK BOARD</span><span class="preview-window">— &nbsp; □ &nbsp; ×</span></div>
+              <div class="preview-content">
+                <div class="preview-sidebar"><div class="preview-brand"><span>D</span> daymark.</div><div class="preview-nav active">▤ &nbsp; My tasks</div><div class="preview-nav">◷ &nbsp; In progress</div><div class="preview-profile"><i>S</i> Your workspace</div></div>
+                <div class="preview-board"><div class="preview-greeting">YOUR PERSONAL WORKSPACE</div><div class="preview-title">Task board<span>.</span> <b>＋ New task</b></div><div class="preview-stats"><span><small>TOTAL TASKS</small><strong>08</strong></span><span><small>IN PROGRESS</small><strong>03</strong></span><span><small>COMPLETED</small><strong>05</strong></span></div><div class="preview-list-label">All tasks <small>3 tasks</small></div><div class="preview-task"><i></i><span><strong>Set up project workspace</strong><small>Get the foundations in place</small></span><b>IN PROGRESS</b></div><div class="preview-task"><i></i><span><strong>Build something great</strong><small>Every good idea starts somewhere</small></span><b class="preview-high">HIGH</b></div><div class="preview-task done"><i>✓</i><span><strong>Take the first step</strong><small>One small win at a time</small></span><b>COMPLETED</b></div></div>
+              </div>
+              <div class="preview-glow" aria-hidden="true"></div>
+            </div>
+            <div class="project-details">
+              <div class="project-label"><span class="project-bullet"></span> FULL-STACK + DEVOPS LEARNING PROJECT</div>
+              <h3>Daymark<span>.</span><br>Your tasks, moving forward.</h3>
+              <p>A clean task manager UI backed by a Java REST API. The repository includes an example CI/CD pipeline and infrastructure configuration to explore the journey from code to an AWS Kubernetes deployment.</p>
+              <div class="project-tech"><span>JAVA</span><span>SPRING BOOT</span><span>JAVASCRIPT</span><span>DOCKER</span><span>AWS</span><span>KUBERNETES</span></div>
+              <div class="project-actions">
+                <a class="button button-primary" href="https://shivangikanamas.github.io/Devops-Project/">Try the live demo <span aria-hidden="true">↗</span></a>
+                <a class="button button-outline" href="https://github.com/shivangikanamas/Devops-Project">View source <span aria-hidden="true">↗</span></a>
+              </div>
+              <p class="project-disclaimer">The hosted preview is an interactive browser demo. AWS deployment requires your own account, setup and budget.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing-section">
+        <div class="wrap closing-content">
+          <span class="closing-spark" aria-hidden="true">✳</span>
+          <p class="eyebrow">THE NEXT CHAPTER</p>
+          <h2>Still learning.<br><span class="muted-heading">Always building.</span></h2>
+          <p>Every project is a new opportunity to get a little better.</p>
+          <a class="button button-primary" href="https://github.com/shivangikanamas">Explore my GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <a class="footer-brand" href="#home">shivangi<span>.</span></a>
+        <span class="footer-note">A portfolio in progress. Built with curiosity.</span>
+        <a class="footer-link" href="https://github.com/shivangikanamas">GITHUB ↗</a>
+        <span class="footer-year">© <span id="year"></span></span>
+      </div>
+    </footer>
+  </body>
+</html>
